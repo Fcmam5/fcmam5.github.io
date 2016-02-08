@@ -28,7 +28,9 @@ h1
     position: relative;
     padding: 10%;
     padding-top: 2%;
+    box-shadow: 0px 0px 10px white;
 }
+
 #top{
     margin-top: -450px;
     height: 430px;
