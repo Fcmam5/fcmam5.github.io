@@ -1,0 +1,60 @@
+.rtl{
+  direction: rtl;
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+}
+
+.my-pic-bc{
+  background-image: url(../img/fcmam5-bw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header{
+  height: 80vh;
+  padding-top: 20%;
+  text-align: center;;
+  color: white;
+}
+
+.hero{
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 2% 0%;
+}
+.pic-spacer{
+  height: 50vh;
+  background-position: bottom;
+  z-index: 2;
+}
+
+header h1{
+  margin-top: 0px;
+}
+
+nav {
+  margin-bottom: 0px!important;
+}
+
+ul.hover-to-color{
+  width: 70%;
+  margin: auto;
+}
+
+.hover-to-color img{
+  height: 100px;
+  padding: 1px;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(.9); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(.9); /* Microsoft Edge and Firefox 35+ */
+}
+
+.hover-to-color img:hover{
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.project-block span.label{
+  line-height: 2;
+}
