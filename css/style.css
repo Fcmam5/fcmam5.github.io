@@ -40,11 +40,12 @@ nav {
 ul.hover-to-color{
   width: 70%;
   margin: auto;
+  text-align: center;
 }
 
 .hover-to-color img{
   height: 100px;
-  padding: 1px;
+  padding: 3px;
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(.9); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(.9); /* Microsoft Edge and Firefox 35+ */
