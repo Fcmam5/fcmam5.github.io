@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin:0;
+}
+
+main {
+  flex: 1;
+}
+
+h3,
+.h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2,
+.h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4,
+.h4 {
+  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  margin: 0 16px;
+}
+
+.pl-2 {
+  padding-left: 8px;
+}
+
+.pl-4 {
+  padding-left: 16px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-8 {
+  margin-top: 28px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.content {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.dbl-borders {
+  border: 2px black double;
+  padding: 12px;
+}
+
+.highlatable-list li,
+.highlatable-paragraphs p {
+  margin-bottom: 4px;
+
+}
+.highlatable-list li:hover,
+.highlatable-paragraphs p:hover {
+  background-color: aliceblue;
+}
