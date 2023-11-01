@@ -102,3 +102,7 @@ strong {
 .highlatable-paragraphs p:hover {
   background-color: aliceblue;
 }
+
+footer {
+  padding: 16px 0px;
+}
