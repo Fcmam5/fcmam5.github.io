@@ -1,0 +1,12 @@
+.projects {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.title {
+  padding: 2rem;
+  text-align: center;
+}
