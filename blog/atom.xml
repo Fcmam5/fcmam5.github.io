@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://fcmam5.me/blog</id>
+    <title>Abdeldjalil Fortas' notepad Blog</title>
+    <updated>2024-03-10T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://fcmam5.me/blog"/>
+    <subtitle>Abdeldjalil Fortas' notepad Blog</subtitle>
+    <icon>https://fcmam5.me/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hello world]]></title>
+        <id>https://fcmam5.me/blog/2024/03/10/todo</id>
+        <link href="https://fcmam5.me/blog/2024/03/10/todo"/>
+        <updated>2024-03-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TODO: Import articles from Medium]]></summary>
+        <content type="html"><![CDATA[<p>TODO: Import articles from Medium</p>]]></content>
+    </entry>
+</feed>
