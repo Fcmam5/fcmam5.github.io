@@ -2,8 +2,7 @@
 slug: learning-front-end-development-again-part-1-browser-rendering-optimization
 authors:
   - fcmam5
-tags: [frontend]
-image: header.png
+tags: [frontend,development]
 hide_table_of_contents: false
 ---
 
@@ -14,7 +13,7 @@ hide_table_of_contents: false
 <!-- truncate -->
 
 :::note
-This blog was originally published on Medium: [I’m learning front-end development, again — Part 1 (Browser rendering optimization)](https://medium.com/@Fcmam5/im-learning-front-end-development-again-part-1-browser-rendering-optimization-c8359ee90c40)
+I published this article previously on Medium: [I’m learning front-end development, again — Part 1 (Browser rendering optimization)](https://medium.com/@Fcmam5/im-learning-front-end-development-again-part-1-browser-rendering-optimization-c8359ee90c40)
 
 :::
 

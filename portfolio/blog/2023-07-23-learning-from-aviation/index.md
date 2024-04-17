@@ -3,31 +3,33 @@ description: What I learned from aviation as a software engineer.
 slug: trying-to-become-a-better-developer-by-learning-more-about-aviation
 authors:
   - fcmam5
-tags: [general]
+tags: [development]
 image: header.png
 hide_table_of_contents: false
 ---
 
 # Trying to become a better developer by learning more about aviation
 
-![Air Algérie Flight 702P (Boeing 737) in the simulator from Mentour Pilot’s video](header.png)
 
 In the last few months, I started geeking more about aviation-related topics. Mostly by watching A LOT of videos explaining how things work, and how accidents happened in that highly regulated and safe field.
 
-<!-- truncate -->
-
-:::note
-This blog was originally published on medium ([Trying to become a better developer by learning more about aviation](https://medium.com/@Fcmam5/trying-to-become-a-better-developer-by-learning-more-about-aviation-5241e7092f7e)), it was - by far - my most popular post ever.
-:::
-
-
 I really don’t know why the aviation domain precisely but, I think it has a sweet spot for me where I learn new things, while I let go of things I don’t understand very well so that I don’t dive too deep into searching and reading. For example, I can understand what “Wake turbulence” is, but I can’t explain it in physics terms, which is fine for a hobbyist.
 
+<!-- truncate -->
+
 In a journey to become a better software engineer, I believe it’s necessary to continuously improve my “Engineer reflexes and intuitions”, if I can call it that. It’s basically having that sense that made seniors I worked with say: No I don’t like that solution, I think it will cause XYZ. An answer like that was impressive to me, how could they bring all those exceptions and edge cases to the table and be that proactive?
+
+:::note
+I published this article previously on Medium: [Trying to become a better developer by learning more about aviation](https://medium.com/@Fcmam5/trying-to-become-a-better-developer-by-learning-more-about-aviation-5241e7092f7e), it was - by far - my most popular post ever.
+:::
+
 
 The answer was partially in the many aviation videos I watched: It’s in training, a lot of training, and in learning about others’ mistakes (because we can’t afford to try them on our own) and in talking and reading, being open and up to date.
 
 In a high-risk field, you would have smart people who are specialists in risk management, and together with engineers and inspectors they usually bring up standards, best practices, and patterns and concepts to follow.
+
+![Air Algérie Flight 702P (Boeing 737) in the simulator from Mentour Pilot’s video](header.png)
+
 
 From those concepts, I learned about:
 
