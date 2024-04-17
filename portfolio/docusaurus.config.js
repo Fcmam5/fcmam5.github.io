@@ -39,6 +39,10 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        gtag: {
+          trackingID: "G-6WM7E899MF",
+          anonymizeIP: true,
+        },
         docs: false,
         blog: {
           showReadingTime: true,
