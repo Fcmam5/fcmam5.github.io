@@ -6,9 +6,7 @@ authors:
 tags: [backend,nestjs,development]
 ---
 
-
 # Avoiding NestJS performance bottlenecks
-
 
 I have been using [NestJS](https://nestjs.com/) for quite some time now. And as every JavaScript developer, I like to complain about it but I still love it, and I still have it as one of my go-to whenever I want to create any Node application.
 
