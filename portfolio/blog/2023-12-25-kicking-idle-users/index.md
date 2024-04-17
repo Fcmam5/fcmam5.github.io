@@ -107,7 +107,7 @@ A couple of months ago I wrote [Hamid.js](https://github.com/Fcmam5/hamid.js), a
 
 For example, if you want to logout a user after 5 minutes of being inactive:
 
-<iframe height="300" width="100%" scrolling="no" title="Hamid.js" src="https://codepen.io/Fcmam5/embed/mdodKVN?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" width="100%" scrolling="no" title="Hamid.js" src="https://codepen.io/Fcmam5/embed/mdodKVN?default-tab=js" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/Fcmam5/pen/mdodKVN">
   Hamid.js</a> by Fortas Abdeldjalil (<a href="https://codepen.io/Fcmam5">@Fcmam5</a>)
   on <a href="https://codepen.io">CodePen</a>.
