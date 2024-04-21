@@ -32,9 +32,14 @@ Now, before you scroll down this article looking for examples where I show you h
 
 The problem with CORS is **YOU**, **ME**, and the over-simplified tutorials on the internet.
 
-CORS, is a security mechanism to protect applications from being called from untrusted origins.
+[Same-origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) is a security barrier that restricts resources from being loaded by one origin.
 
-It is a way where you authorize certain clients to call your application from whitelisted origins. For example, if you have a backend API being served from `https://api.kavi.wiw`, the outcome will be the following:  
+This policy helps reducing attack vectors by isolating malicious resources.
+
+[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) is a way to "*lift that barrier*" by allowing cross-origin access (`C O` in `CORS` as you guessed correctly).
+
+It is a way where your client can load data only from whitelisted origins. For example, if you have a backend API being served from `https://api.kavi.wiw`, the outcome will be the following: 
+
 
 | Client                       | Server (Target)        | Outcome              |
 | ---------------------------- | ---------------------- | -------------------- |
@@ -53,9 +58,13 @@ No 'Access-Control-Allow-Origin' header is present on the requested resource.
 Origin 'null' is therefore not allowed access.
 ```
 
-This error is thrown by my browser, as it doesn't let my front-end to call my backend. That's to protect my backend from possible malicious actions I can perform by tweaking the front-end code and hosting it somewhere else, or by tweaking it and making it call unauthorized hosts (e.g. `http://admin.kavi.wiw/`).
+This error is thrown by my browser, as it doesn't let my front-end to load the response from backend. 
 
-However, we understood from the error that `Access-Control-Allow-Origin` is missing. So we can add it to our server responses, but what values should it have?
+That's to protect users from calling backends form unauthorized origins. For example, if a threat actor creates clones our front-end, and create a fake website say: `https://fake-kavi.wiw`. Then sends it to victims.
+
+[Same-origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) policy blocks this new unauthorized origin from loading responses from `http://api.kavi.wiw/`.
+
+Anyways, we understood from the error that `Access-Control-Allow-Origin` is missing. So we can add it to our server responses, but what values should it have?
 
 Tutorials online mostly use wildcards (`*`), or advice to use packages blindly, I mean even the "GREAT" ChatGPT told me this:
 
@@ -139,10 +148,26 @@ Many tutorials online suggest using proxies (either building our own proxies, or
 
 There are no generic solutions. But there are best practices, and these are very project-specific. Don't take advice from random people online. Learn the basics and make your own judgment, or learn to ask the right questions.
 
+
 Learn more about CORS on:
 
+- How to prevent CORS-based attacks: https://portswigger.net/web-security/cors#how-to-prevent-cors-based-attacks
+- Same-origin policy: https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
 - Cross-Origin Resource Sharing (CORS): https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 - CORS Tutorial: A Guide to Cross-Origin Resource Sharing: https://auth0.com/blog/cors-tutorial-a-guide-to-cross-origin-resource-sharing/
 - Become a CORS Wizard 🧙‍♀️: https://fatimamo.com/become-a-cors-wizard
 - I want to add CORS support to my server: https://enable-cors.org/server.html
 - Front-end Developer Handbook 2019: https://frontendmasters.com/guides/front-end-handbook/2019/?#4.4
+
+
+## Updates:
+
+### Correction #1
+
+**Wrong**
+
+> ~~CORS, is a security mechanism to protect applications from being called from untrusted origins.~~
+
+**Correction (on [Reddit](https://www.reddit.com/r/programming/comments/1c9inc9/comment/l0lk2tw/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button))**
+
+> Same-Origin Policy is the security measure and CORS is a way to lift that protection in selected cases.
