@@ -46,6 +46,8 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: true,
+          editUrl:
+            "https://github.com/Fcmam5/fcmam5.github.io/tree/master/portfolio",
         },
         theme: {
           customCss: "./src/css/custom.css",
