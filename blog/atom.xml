@@ -25,14 +25,18 @@
 <p>Now, before you scroll down this article looking for examples where I show you how to carelessly allow all origins to make your new shiny React or Vue application "work", let's ramble for a little bit, and try to make the web a better place.</p>
 <h2 class="anchor anchorWithStickyNavbar_PV8p" id="the-problem-with-cors">The problem with CORS<a href="https://fcmam5.me/blog/breaking-cors-by-fixing-it#the-problem-with-cors" class="hash-link" aria-label="Direct link to The problem with CORS" title="Direct link to The problem with CORS">​</a></h2>
 <p>The problem with CORS is <strong>YOU</strong>, <strong>ME</strong>, and the over-simplified tutorials on the internet.</p>
-<p>CORS, is a security mechanism to protect applications from being called from untrusted origins.</p>
-<p>It is a way where you authorize certain clients to call your application from whitelisted origins. For example, if you have a backend API being served from <code>https://api.kavi.wiw</code>, the outcome will be the following:</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" target="_blank" rel="noopener noreferrer">Same-origin</a> is a security barrier that restricts resources from being loaded by one origin.</p>
+<p>This policy helps reducing attack vectors by isolating malicious resources.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank" rel="noopener noreferrer">CORS</a> is a way to "<em>lift that barrier</em>" by allowing cross-origin access (<code>C O</code> in <code>CORS</code> as you guessed correctly).</p>
+<p>It is a way where your client can load data only from whitelisted origins. For example, if you have a backend API being served from <code>https://api.kavi.wiw</code>, the outcome will be the following:</p>
 <table><thead><tr><th>Client</th><th>Server (Target)</th><th>Outcome</th></tr></thead><tbody><tr><td><code>https://api.kavi.wiw/v1</code></td><td><code>https://api.kavi.wiw</code></td><td><code>Same origin</code></td></tr><tr><td><code>http://api.kavi.wiw/</code></td><td><code>https://api.kavi.wiw</code></td><td><code>Different protocol</code></td></tr><tr><td><code>https://api.kavi.wiw:8080/</code></td><td><code>https://api.kavi.wiw</code></td><td><code>Different port</code></td></tr><tr><td><code>https://www.kavi.wiw/</code></td><td><code>https://api.kavi.wiw</code></td><td><code>Different host</code></td></tr></tbody></table>
 <p>Two objects have the same origin only when the scheme (protocol), hostname (domain), and port all match.</p>
 <p>If my shiny Angular or React front-end application is served from <code>https://www.kavi.wiw/</code> and tries to consume my Node.js APIs on <code>http://api.kavi.wiw/</code>, I mostly likely will get the following error:</p>
 <div class="codeBlockContainer_KNDO theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_Gjbw"><pre tabindex="0" class="prism-code language-text codeBlock_CjlJ thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_D9LQ"><span class="token-line" style="color:#393A34"><span class="token plain">XMLHttpRequest cannot load http://api.kavi.wiw/.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">No 'Access-Control-Allow-Origin' header is present on the requested resource. </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Origin 'null' is therefore not allowed access.</span><br></span></code></pre><div class="buttonGroup_e9bE"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_JVcx" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_ojVv"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_Xe0s"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>This error is thrown by my browser, as it doesn't let my front-end to call my backend. That's to protect my backend from possible malicious actions I can perform by tweaking the front-end code and hosting it somewhere else, or by tweaking it and making it call unauthorized hosts (e.g. <code>http://admin.kavi.wiw/</code>).</p>
-<p>However, we understood from the error that <code>Access-Control-Allow-Origin</code> is missing. So we can add it to our server responses, but what values should it have?</p>
+<p>This error is thrown by my browser, as it doesn't let my front-end to load the response from backend.</p>
+<p>That's to protect users from calling backends form unauthorized origins. For example, if a threat actor creates clones our front-end, and create a fake website say: <code>https://fake-kavi.wiw</code>. Then sends it to victims.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" target="_blank" rel="noopener noreferrer">Same-origin</a> policy blocks this new unauthorized origin from loading responses from <code>http://api.kavi.wiw/</code>.</p>
+<p>Anyways, we understood from the error that <code>Access-Control-Allow-Origin</code> is missing. So we can add it to our server responses, but what values should it have?</p>
 <p>Tutorials online mostly use wildcards (<code>*</code>), or advice to use packages blindly, I mean even the "GREAT" ChatGPT told me this:</p>
 <p><img decoding="async" loading="lazy" alt="ChatGPT advising to use cors package" src="https://fcmam5.me/assets/images/chat-gpt-fix-cors-a7b12d1807b8f24d3a5657509081e9c0.png" width="1274" height="1434" class="img_H9vG"></p>
 <p>It advised me to use <code>cors</code> package for this example, but if I ask it to not libraries I got the following answer:</p>
@@ -57,12 +61,24 @@
 <p>There are no generic solutions. But there are best practices, and these are very project-specific. Don't take advice from random people online. Learn the basics and make your own judgment, or learn to ask the right questions.</p>
 <p>Learn more about CORS on:</p>
 <ul>
+<li>How to prevent CORS-based attacks: <a href="https://portswigger.net/web-security/cors#how-to-prevent-cors-based-attacks" target="_blank" rel="noopener noreferrer">https://portswigger.net/web-security/cors#how-to-prevent-cors-based-attacks</a></li>
+<li>Same-origin policy: <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy</a></li>
 <li>Cross-Origin Resource Sharing (CORS): <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS</a></li>
 <li>CORS Tutorial: A Guide to Cross-Origin Resource Sharing: <a href="https://auth0.com/blog/cors-tutorial-a-guide-to-cross-origin-resource-sharing/" target="_blank" rel="noopener noreferrer">https://auth0.com/blog/cors-tutorial-a-guide-to-cross-origin-resource-sharing/</a></li>
 <li>Become a CORS Wizard 🧙‍♀️: <a href="https://fatimamo.com/become-a-cors-wizard" target="_blank" rel="noopener noreferrer">https://fatimamo.com/become-a-cors-wizard</a></li>
 <li>I want to add CORS support to my server: <a href="https://enable-cors.org/server.html" target="_blank" rel="noopener noreferrer">https://enable-cors.org/server.html</a></li>
 <li>Front-end Developer Handbook 2019: <a href="https://frontendmasters.com/guides/front-end-handbook/2019/?#4.4" target="_blank" rel="noopener noreferrer">https://frontendmasters.com/guides/front-end-handbook/2019/?#4.4</a></li>
-</ul>]]></content>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_PV8p" id="updates">Updates:<a href="https://fcmam5.me/blog/breaking-cors-by-fixing-it#updates" class="hash-link" aria-label="Direct link to Updates:" title="Direct link to Updates:">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_PV8p" id="correction-1">Correction #1<a href="https://fcmam5.me/blog/breaking-cors-by-fixing-it#correction-1" class="hash-link" aria-label="Direct link to Correction #1" title="Direct link to Correction #1">​</a></h3>
+<p><strong>Wrong</strong></p>
+<blockquote>
+<p><del>CORS, is a security mechanism to protect applications from being called from untrusted origins.</del></p>
+</blockquote>
+<p><strong>Correction (on <a href="https://www.reddit.com/r/programming/comments/1c9inc9/comment/l0lk2tw/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button" target="_blank" rel="noopener noreferrer">Reddit</a>)</strong></p>
+<blockquote>
+<p>Same-Origin Policy is the security measure and CORS is a way to lift that protection in selected cases.</p>
+</blockquote>]]></content>
         <author>
             <name>Abdeldjalil Fortas</name>
             <uri>https://github.com/fcmam5</uri>
