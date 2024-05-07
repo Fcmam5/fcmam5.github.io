@@ -171,3 +171,9 @@ Learn more about CORS on:
 **Correction (on [Reddit](https://www.reddit.com/r/programming/comments/1c9inc9/comment/l0lk2tw/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button))**
 
 > Same-Origin Policy is the security measure and CORS is a way to lift that protection in selected cases.
+
+<!-- ### Correction #2
+
+Reddit and AOO: * and cookies
+
+https://youtu.be/Ka8vG5miErk -->

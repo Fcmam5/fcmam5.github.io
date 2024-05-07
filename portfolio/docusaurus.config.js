@@ -73,6 +73,7 @@ const config = {
         },
         items: [
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/snippets", label: "Snippets", position: "left" },
           {
             href: "https://github.com/fcmam5",
             label: "GitHub",
@@ -89,6 +90,10 @@ const config = {
               {
                 label: "Blog",
                 to: "/blog",
+              },
+              {
+                label: "Snippets",
+                to: "/snippets",
               },
               {
                 label: "Contributions",
@@ -137,6 +142,16 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+  plugins: [
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "snippets-blog",
+        routeBasePath: "snippets",
+        path: "./snippets-blog",
+      },
+    ],
+  ],
 };
 
 export default config;

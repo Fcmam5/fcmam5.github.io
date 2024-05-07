@@ -63,6 +63,7 @@ Here are some of my most voted StackOverflow questions, *[click here see all](ht
 - Use `Buffer.alloc` and `Buffer.from` instead of constructor in [node-config#620](https://github.com/node-config/node-config/pull/620)
 - Added HPA template a VS Code extension ([vscode-kubernetes-tools#1049](https://github.com/vscode-kubernetes-tools/vscode-kubernetes-tools/pull/1049))
 - Added fastify route constraints to [nestjs#12567](https://github.com/nestjs/nest/pull/12567) (needed: [fastify#5097](https://github.com/fastify/fastify/pull/5097))
+- Fixed an error leading to application crash when using versioning without `.enableVersioning()` in [nestjs#13536](https://github.com/nestjs/nest/pull/13536)
 
 </details>
 
