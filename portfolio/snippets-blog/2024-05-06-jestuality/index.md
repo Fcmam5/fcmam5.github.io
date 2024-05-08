@@ -1,6 +1,7 @@
 ---
 description: Jest tips & tricks
 slug: jest-utility
+showLastUpdateTime: true
 authors:
   - fcmam5
 tags: [js,ts,testing]
@@ -170,3 +171,43 @@ Proposed solution: Throw custom errors
 
 - https://stackoverflow.com/a/75569401/5078746
 - https://stackoverflow.com/a/75524385/5078746
+
+
+### `jest.mock` calls are automatically hoisted
+
+
+**Resources:**
+
+- https://github.com/jestjs/jest/issues/2582#issuecomment-272287545
+- https://github.com/kentcdodds/how-jest-mocking-works
+
+### Jest mocks have to have `mock` in names
+
+Mocks must have `mock` prefix in the name, otherwise you will see the following error:
+```
+    Note: This is a precaution to guard against uninitialized mock variables. If it is ensured that the mock is required lazily, variable names prefixed with `mock` (case insensitive) are permitted.
+```
+
+For example here:
+
+```js
+const fakeEmoji = jest.fn();
+
+jest.mock("./emoji", () => ({
+  getEmoji: fakeEmoji,
+}));
+
+const { getHello } = require("./hello");
+
+describe("Testing my-module", () => {
+  beforeEach(() => {
+    fakeEmoji.mockReturnValue("😏");
+  });
+
+  it('should say "Hello {NAME}" with a smirk', () => {
+    expect(getHello("Kadour")).toBe("Hello Kadour 😏");
+  });
+});
+```
+
+My mock function (`fakeEmoji`) must have `mock` prefix.
