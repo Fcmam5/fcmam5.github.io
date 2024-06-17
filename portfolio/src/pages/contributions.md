@@ -2,15 +2,6 @@
 
 
 <details>
-  <summary>Blogs</summary>
-  
-- [I’m learning front-end development, again — Part 1 (Browser rendering optimization)](https://medium.com/@Fcmam5/im-learning-front-end-development-again-part-1-browser-rendering-optimization-c8359ee90c40) (May 2018)
-- [Trying to become a better developer by learning more about aviation](https://medium.com/@Fcmam5/trying-to-become-a-better-developer-by-learning-more-about-aviation-5241e7092f7e) (July 2023)
-- [Avoiding NestJS performance bottlenecks](https://medium.com/@Fcmam5/avoiding-nestjs-performance-bottlenecks-78fa2bc66372) (September 2023)
-
-</details>
-
-<details>
   <summary>Blogs in Arabic (مُدَوَّنَات عَرَبيّة)</summary>
   
 - [كمبتدئ: الروابط الصلبة و الروابط اللينة(مرنة) Soft Links and Hard links](https://www.linuxac.org/node/71662) (August 2015)
@@ -19,7 +10,7 @@
 </details>
 
 <details>
-  <summary>Top answers on StackOverflow </summary>
+  <summary>Top answers on StackOverflow</summary>
   
 Here are some of my most voted StackOverflow questions, *[click here see all](https://stackoverflow.com/users/5078746/fcmam5?tab=answers&sort=votes).*
 ### Jest
@@ -55,7 +46,7 @@ Here are some of my most voted StackOverflow questions, *[click here see all](ht
 </details>
 
 <details>
-  <summary>Open-source</summary>
+  <summary>Open Source contributions</summary>
   
 - Arabizing ReactJS documentation ([reactjs/ar.react.dev(is:pr author:Fcmam5 is:closed )](https://github.com/reactjs/ar.react.dev/pulls?q=is%3Apr+author%3AFcmam5+is%3Aclosed))
 - Add HTTP code 425 Too Early to [@hapi/boom#261](https://github.com/hapijs/boom/pull/261)
@@ -64,6 +55,15 @@ Here are some of my most voted StackOverflow questions, *[click here see all](ht
 - Added HPA template a VS Code extension ([vscode-kubernetes-tools#1049](https://github.com/vscode-kubernetes-tools/vscode-kubernetes-tools/pull/1049))
 - Added fastify route constraints to [nestjs#12567](https://github.com/nestjs/nest/pull/12567) (needed: [fastify#5097](https://github.com/fastify/fastify/pull/5097))
 - Fixed an error leading to application crash when using versioning without `.enableVersioning()` in [nestjs#13536](https://github.com/nestjs/nest/pull/13536)
+
+</details>
+
+
+
+<details>
+  <summary>Open Source projects</summary>
+
+- [`Nimiro`](https://marketplace.visualstudio.com/items?itemName=Fcmam5.nimiro): An extension to display juxtaposed numbers for uncaffeinated developers, or developers with dyslexia.
 
 </details>
 
@@ -77,4 +77,5 @@ Here are some of my most voted StackOverflow questions, *[click here see all](ht
   <summary>Publications</summary>
 
   - [ASSES vl: an Algerian Scalable and Simple-To-Use Exam-generation System](https://ieeexplore.ieee.org/document/9470701): Continuity for my Bachelor's degree project (an online exam generation and exam questions bank, with an e-exam platform).
+  - [The State Of Software Engineering in Algeria (2024)](https://state-of-algeria.dev/): A detailed report about software engineering field in Algeria, based on a survey that collected 500+ entry, several interviews and 6+ months of research.
 </details>
