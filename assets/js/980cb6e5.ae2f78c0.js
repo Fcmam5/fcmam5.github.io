@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[8753],{7657:t=>{t.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"My npm notebook","permalink":"/snippets/npm-stuff","unlisted":false},{"title":"Jest-uatlity: Making work with Jest fun\xa0again","permalink":"/snippets/jest-utility","unlisted":false}]}')}}]);
