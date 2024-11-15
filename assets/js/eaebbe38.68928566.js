@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[7878],{8236:t=>{t.exports=JSON.parse('{"authors":[{"name":"Abdeldjalil Fortas","title":"A part-time Karantika lover","url":"https://github.com/fcmam5","imageURL":"https://github.com/fcmam5.png","key":"fcmam5","page":null,"count":2}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[9307],{8997:t=>{t.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"My thoughts about data protection in Algeria","permalink":"/dz-blog/data-protection-dz-imo","unlisted":false,"date":"2024-10-19T00:00:00.000Z"}]}')}}]);
