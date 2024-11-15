@@ -49,6 +49,10 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: true,
+          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+            frontMatter.hide_reading_time
+              ? undefined
+              : defaultReadingTime({ content }),
           editUrl:
             "https://github.com/Fcmam5/fcmam5.github.io/tree/master/portfolio",
         },
