@@ -33,7 +33,10 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
   presets: [
     [
       "classic",
@@ -74,6 +77,7 @@ const config = {
         items: [
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/snippets", label: "Snippets", position: "left" },
+          { to: "/dz-blog", label: "<DZ />", position: "left" },
           {
             href: "https://github.com/fcmam5",
             label: "GitHub",
@@ -149,6 +153,14 @@ const config = {
         id: "snippets-blog",
         routeBasePath: "snippets",
         path: "./snippets-blog",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "dz-blog",
+        routeBasePath: "dz-blog",
+        path: "./dz-blog",
       },
     ],
   ],
