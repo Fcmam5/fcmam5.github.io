@@ -3,6 +3,7 @@ description: My thoughts about data protection in Algeria
 slug: data-protection-dz-imo
 toc_max_heading_level: 4
 hide_reading_time: true
+image: ./brown-padlock-on-blue-wooden-door.png
 authors:
   - fcmam5
 tags: [algeria, privacy]
@@ -91,6 +92,7 @@ In fact, every node, and every link of that graph is problematic, and it has som
 
 
 ![Photo by Karim MANJRA on Unsplash](Karim-MANJRA-door.png)
+<small>Photo by <a href="https://unsplash.com/@karim_manjra?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Karim MANJRA</a> on <a href="https://unsplash.com/photos/a-rusted-metal-door-with-two-knobs-on-it-CIXQCIEv1JU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
 
 ## The problems with data privacy within this framework
 
@@ -504,3 +506,7 @@ I'll probably rewrite it in a different language or a framework if the community
 :::
 
 *Thank you for reaching this point of the article whether by reading, scrolling or letting your AI friend summarize it for you. I hope we start to continue talking about this topic and help to improve the Algerian tech scene*
+
+<br/>
+
+<small>Thumbnail image credit: <a href="https://unsplash.com/@blueswallow?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Parastoo Maleki</a> on <a href="https://unsplash.com/photos/brown-padlock-on-blue-wooden-door-lkVauaqa__M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
