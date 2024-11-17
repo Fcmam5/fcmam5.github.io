@@ -165,6 +165,11 @@ const config = {
         id: "dz-blog",
         routeBasePath: "dz-blog",
         path: "./dz-blog",
+        showReadingTime: true,
+        readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+          frontMatter.hide_reading_time
+            ? undefined
+            : defaultReadingTime({ content }),
       },
     ],
   ],
