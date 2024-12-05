@@ -411,7 +411,7 @@ And sometimes, we are a little bit hyped up. With all bootcamps, startups trend 
 
 To start with another example; A couple of years ago, a big influencer in the country launched an e-shopping application. That made some noise, which made me curious... Who made it? What stack they're using, etc.
 
-A couple of minutes of "playing" with the application we found out that they use GraphQL for their API, and the developer who worked on it left his API unprotected and even the GraphQL playground enabled.
+A couple of minutes of "playing" with the application (together with my friend [Taym](https://x.com/taym95)), we found out that they use GraphQL for their API, and the developer who worked on it left his API unprotected and even the GraphQL playground enabled.
 
 ![A GQL backend, open and public](open-graphql-endpoint.png)
 
