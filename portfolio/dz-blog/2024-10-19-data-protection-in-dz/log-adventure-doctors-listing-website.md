@@ -1,5 +1,5 @@
 ---
-slug: data-protection-in-dz/log-adventure-doctors-listing-website
+slug: data-protection-dz-imo/log-adventure-doctors-listing-website
 unlisted: true
 ---
 
@@ -40,7 +40,7 @@ On the same day, I contacted the ANPDP via `contact.anpdp@anpdp.dz` as their rep
 سيتم لاحقا نشر كيفيات تحويل الاستمارات و تقديم الاحتجاجات و التظلّمات و الشكاوى.
 ```
 
-### Site 2
+### Site2
 
 ![Site2](doc-site-2.png)
 
@@ -52,3 +52,41 @@ Few minutes later, I saw that someone from their platform visited my profile on 
 
 
 Let's see how fast (and serious) they'll handle my request before I escalate it.
+
+## Update 2: Site2 Deleted the page; Site1 said they'll look into it (06.02.2024)
+
+### Site1
+
+I found that they have a Facebook page, I sent them a message on Facebook.
+
+Few hours later, I got an answer from them on Facebook saying that they just read my email, even though I got an automated response from my email client that their address doesn't exist:
+
+```
+550 No such recipient here (in reply to RCPT TO command)
+```
+
+So I assumed that they meant my message on Facebook. Then they said:
+
+> Nous venons de lire votre mail,
+> 
+> Et nous porterons les vérifications nécessaires pour vous répondre 
+> 
+> Si Votre ~~`XXX`~~ est répertoriée sur notre plateforme cela ne constitue pas une infraction du moment que ce sont des coordonnées publiques et déjà affichées sur internet
+> 
+> Les patients ne peuvent pas prendre de rdv sur notre plateforme du moment que le médecin n'y est pas abonné
+>
+> Par ailleurs la création de profile a du être faite suite au passage d'un de nos délégués au sein de son cabinet
+>
+> Nous procéderons a une vérification dimanche et reviendrons vers vous
+
+
+Then, they said that they used publicly available data, and if the person is listed on their website, means that it was registered following the  visit of one of our representatives.
+
+### Site2 
+
+Few hours after reporting the issue to "**Site 2**", they deleted the page/entry from their website. But it still appear on Google searches (I explicitly asked to remove the entry from their databases, mailing-lists and all search results).
+
+For now, I wouldn't request that on my own [from Google](https://support.google.com/websearch/answer/11080680?hl=en) and other search engines, let's see if they will fulfill this request, and if they will get back to me! At this point, I didn't have any ACK or any notification that my query has been received and that they are working on it.
+
+To clarify this further more: I did ask them to confirm once they remove the data I requested.
+

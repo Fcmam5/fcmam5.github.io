@@ -497,16 +497,21 @@ I'm Abdeldjalil, an Algerian software engineer. In my career, I dealt with GDPR-
 
 For months I worked on [The State of Software Engineering in Algeria](https://state-of-algeria.dev/), a report based on a survey and interviews and a lot of research to assess the state of software engineering in Algeria. Where we tackled different topics (salaries, challenges, remote work, cybersecurity, etc).
 
-I value people's privacy and want to contribute to a culture of writing responsible and respectful software. Sometimes by writing and talking about this topic. And sometimes by building darja-inspired tools like: [hamid.js](https://github.com/Fcmam5/hamid.js), [jelban.js](https://github.com/Fcmam5/jelban-js), and soon: Karkabou.
+I value people's privacy and want to contribute to a culture of writing responsible and respectful software. Sometimes by writing and talking about this topic. And sometimes by building darja-inspired tools like: [hamid.js](https://github.com/Fcmam5/hamid.js), [jelban.js](https://github.com/Fcmam5/jelban-js), and [Karkabou](https://github.com/Fcmam5/karkabou-a-vulnerable-app).
 
 :::tip
-Karkabou is a Django application, intentionally made vulnerable & not respecting best practices when it comes to data protection.
+[Karkabou](https://github.com/Fcmam5/karkabou-a-vulnerable-app) is a Django application, intentionally made vulnerable & not respecting best practices when it comes to data protection.
 
 I'll probably rewrite it in a different language or a framework if the community likes the idea :)
 :::
 
-*Thank you for reaching this point of the article whether by reading, scrolling or letting your AI friend summarize it for you. I hope we start to continue talking about this topic and help to improve the Algerian tech scene*
+If you are still interested in more of my adventures and fights for data protection rights in Algeria, check the following stories:
+
+- [LOG1: Adventure with Algerian platforms](/dz-blog/data-protection-dz-imo/log-adventure-doctors-listing-website/)
 
 <br/>
 
+*Thank you for reaching this point of the article whether by reading, scrolling or letting your AI friend summarize it for you. I hope we start to continue talking about this topic and help to improve the Algerian tech scene*
+
 <small>Thumbnail image credit: <a href="https://unsplash.com/@blueswallow?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Parastoo Maleki</a> on <a href="https://unsplash.com/photos/brown-padlock-on-blue-wooden-door-lkVauaqa__M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
+
