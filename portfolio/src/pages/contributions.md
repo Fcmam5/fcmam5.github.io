@@ -79,3 +79,9 @@ Here are some of my most voted StackOverflow questions, *[click here see all](ht
   - [ASSES vl: an Algerian Scalable and Simple-To-Use Exam-generation System](https://ieeexplore.ieee.org/document/9470701): Continuity for my Bachelor's degree project (an online exam generation and exam questions bank, with an e-exam platform).
   - [The State Of Software Engineering in Algeria (2024)](https://state-of-algeria.dev/): A detailed report about software engineering field in Algeria, based on a survey that collected 500+ entry, several interviews and 6+ months of research.
 </details>
+
+<details>
+  <summary>Talks</summary>
+
+  - [Tales from a Cloud Migration (GDG Berlin x Deutsche Bank)](https://gdg.community.dev/events/details/google-gdg-berlin-presents-lets-talk-cloud/): Talk about how we migrated BizBanking Online Banking Microsite and its underlying infrastructure to GCP.
+</details>

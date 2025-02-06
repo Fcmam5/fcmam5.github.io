@@ -48,6 +48,8 @@ const config = {
         },
         docs: false,
         blog: {
+          blogSidebarTitle: "All posts",
+          blogSidebarCount: "ALL",
           showReadingTime: true,
           readingTime: ({ content, frontMatter, defaultReadingTime }) =>
             frontMatter.hide_reading_time
